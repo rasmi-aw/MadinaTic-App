@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Madina-Tic</string>
+
+    <!-- Edit account && Sign_in && Unsigned Visitor screen && sign_up fragments   -->
+
+    <string name="myAccount">Mon compte</string>
+    <string name="otherInfo">Autre informations</string>
+    <string name="actions">Actions</string>
+    <string name="dark_mode">Mode de nuit</string>
+    <string name="contact_us">Nous contacter</string>
+    <string name="delete_my_account">Supprimer mon compte</string>
+    <string name="language_phrase">Changer ma langue</string>
+    <string name="language">Langue</string>
+    <string name="clear_app_data">Nettoyer les données de l\'app</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="profile_picture">Photo de profil</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="sign_up">Inscription</string>
+    <string name="password_forgotten">Mot de passe oublié ?</string>
+    <string name="already_registered">Vous êtes déjà inscrit ?&#160;&#160;</string>
+
+    <!---->
+    <string name="agree_to_our_conditions">J\'accèpte les termes et conditions ?</string>
+    <string name="app_policy">Politique</string>
+    <!---->
+
+    <!--hints-->
+    <string name="hint_familyName">Nom</string>
+    <string name="hint_name">Prénom</string>
+    <string name="hint_phone">Téléphone</string>
+    <string name="hint_nationalId">Numéro national</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_pseudo">Nom symbolique</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_old_password">L\'ancien mot de passe</string>
+    <string name="hint_confirm_password">Confirmer le mot de passe</string>
+    <string name="hint_login_types">Téléphone - Email - Id - Nom symbolique</string>
+    <string name="birthday">Date de naissance</string>
+
+    <!--General-->
+    <string name="save">enregistrer</string>
+    <string name="cancel">ignorer</string>
+    <string name="send">Envoyer</string>
+    <string name="add">Ajouter</string>
+    <string name="previous_page">Précédent</string>
+    <string name="photo">photo</string>
+    <string name="video">vidéo</string>
+    <string name="ok">Oui</string>
+    <string name="connecting_to_server">Connexion au serveur...</string>
+    <string name="confirm_your_account">Vérifier votre E-mail pour confirmer votre compte !</string>
+    <string name="successful_login">Connexion réussie !</string>
+    <string name="successful_password_reset">Mot de passe changé avec succès !</string>
+    <string name="reset_password_email">Vérifier votre E-mail pour pouvoir changer votre mot de passe!</string>
+    <string name="posts_update">Nouveaux statuts</string>
+    <string name="reports_update">Mettre a jour les déclaration</string>
+    <string name="next_page">Continuer</string>
+    <string name="welcome">Bienvenue !</string>
+    <string name="from_camera">Caméra</string>
+    <string name="from_gallery">Depuis la gallery</string>
+    <string name="account_deleted">Désactivation de compte reussie !</string>
+    <string name="see_more">Voir plus...</string>
+    <string name="new_posts">Vous avez number nouveau(x) statut(s) a lire.</string>
+    <string name="new_reports">Vous avez number nouvelle(s) déclaration(s) a voir.</string>
+    <string name="published_in">le:</string>
+    <string name="text_size_small">Petite police</string>
+    <string name="text_size_Medium">Police moyenne</string>
+    <string name="text_size_Large">Grande police</string>
+    <string name="published_by">Publié par:</string>
+    <string name="we_deal_with_problem">Nous allons envoyer les meilleurs agents pour regler ce problème dans les plus courts délais</string>
+    <string name="clean_city">Comme ça nous allons vivre dans une très belle ville</string>
+    <string name="see_news">Des nouvelles quotidiennes seront toujours a votre disposition.</string>
+    <string name="reporting">Déclaration</string>
+    <string name="processing">Traitement</string>
+    <string name="results">Résultat</string>
+    <string name="feedback">Actualités</string>
+
+
+    <!--NewsFeed fragment-->
+    <string name="title">Titre</string>
+    <string name="description">Description</string>
+    <string name="address">Adresse</string>
+    <string name="bookmarked">Article ajouté au favoris</string>
+    <string name="unbookmarked">Aricle supprimé des favoris</string>
+    <string name="report_problem">Signalez un problème</string>
+    <string name="unsigned_visitor_phrase">Vous ne pouvez pas signaler un problème si vous êtes pas connécté</string>
+    <string name="unsigned_see_world_wide_reports">Voir les déclarations</string>
+    <string name="no_internet">Pas de connection internet</string>
+    <string name="select_photo">Prenez ou sélectionez une nouvelle photo svp</string>
+    <string name="algeria">Algérie</string>
+    <string name="statistics">Statistiques</string>
+    <string name="post">annonce</string>
+    <string name="user">utilisateur</string>
+    <string name="report">déclaration</string>
+
+    <!--Citizen my reports fragment-->
+    <string name="my_reports">Mes déclarations</string>
+    <!---->
+    <string name="state_saved"><![CDATA[<font color="#bbbbbb">sauvegardé</font>]]></string>
+    <string name="state_sent"><![CDATA[<font color="#4A148C">envoyé</font>]]></string>
+    <string name="state_viewed"><![CDATA[<font color="#4A148C">consulté</font>]]></string>
+    <string name="state_being_processed"><![CDATA[<font color="#00aacc">traitement</font>]]></string>
+    <string name="state_processed"><![CDATA[<font color="#009966">traité</font>]]></string>
+    <string name="state_rejected"><![CDATA[<font color="#ff0000">rejeté</font>]]></string>
+    <string name="state_incomplete"><![CDATA[<font color="#dd6600">incomplet</font>]]></string>
+    <!---->
+    <string name="search_view_hint">Recherchez par titre, id ou date</string>
+    <!---->
+    <string name="category">Catégorie</string>
+    <string name="id">id</string>
+    <string name="state">L\'état</string>
+    <string name="reason_of_rejection">Motif</string>
+    <string name="date_sent">Envoyé le</string>
+    <string name="only_see_report">vous ne pouvez que consulter la déclaration</string>
+    <string name="delete">supprimer</string>
+    <string name="edit">modifier</string>
+    <string name="complete">compléter</string>
+    <!--    -->
+    <string name="report_deleted">Déclaration supprimée avec succès !</string>
+    <string name="report_sent">Déclaration envoyé avec succès !</string>
+    <string name="deleting_report">Suppression de la déclaration numéro:</string>
+    <string name="one_photo_at_least">Vous devez ajouter au moins une photo.</string>
+    <string name="your_medias_not_saved_with_report">Votre photos/vidéo ne seront pas sauvegardés sauf si la déclarations est envoyé.</string>
+    <string name="profile_picture_updated">Photo de profil changé avec succés !</string>
+
+    <!--About us fragment-->
+    <string name="about_us">A propos de nous</string>
+    <string name="about_app_title">Sur l\'application</string>
+    <string name="about_company_title">Entreprise</string>
+    <string name="policy_title">Politique d\'utilisation</string>
+    <string name="web_site_visit">Voir notre site web</string>
+    <string name="our_contacts">Restez a jour en suivant nos pages en bas</string>
+    <string name="citizen">citoyen</string>
+    <string name="processed">traité</string>
+
+    <!--Report categories-->
+    <string name="water_problem">Problème d\'eau</string>
+    <string name="lighting_problem">Éclairage public</string>
+    <string name="road_problem">Problème de route</string>
+    <string name="other_problem">Autre...</string>
+
+    <!---->
+    <string name="creation_reason">Dans toute place dans le monde vous recontrez<![CDATA[<b>problèmes</b>]]>
+     qui peuvent être traités, sinon ils rendent notre vie plus difficile citons parmi ces derniers des routes cassées,
+        eclairage publique défaillant etc... et que celle ci était la cause principale qui nous a poussé a créer&#160;
+    <![CDATA[<b>Madina-Tic</b>]]>&#160;
+        <![CDATA[<small>\"Nous rondons le monde une meilleure place\"</small>]]>. </string>
+    <!---->
+    <string name="company_description"><![CDATA[<b>Techload</b>]]>
+    est une nouvelle entreprise informatique, spécialisée dans la production des solutions tech creatives pour aider les gens de toute partie du monde a vivre&#160;
+    une vie très simple en plein de joie, et leurs aider a trouver des solutions très simples et moins chères pour leurs problèmes quotidiens.
+    &#160;<![CDATA[<b><br>Travaillant depuis:</b> juin 2020]]>
+    </string>
+    <!---->
+    <string name="read_policy">Tout droit est reservé pour <![CDATA[<b>Techload inc</b>]]>
+    donc on vous conseille de lire tout les termes et conditions d\'utilisation.
+    </string>
+    <!---->
+    <string name="follow_guidlines">Restez en sécurité pendant cette crise,  suivez vos directives locales et protégez votre famille</string>
+    <!---->
+
+    <!--Errors-->
+    <string name="error_is_empty">champ vide</string>
+    <string name="error_confirmation_password_different">confirmation non identique au mot de passe</string>
+    <string name="error_too_short">trop court</string>
+    <string name="error_new_password_equal_to_old">Nouveau mot de passe indiférent de l\'ancien</string>
+
+</resources>

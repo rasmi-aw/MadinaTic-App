@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_very_small"
+    android:layout_marginTop="@dimen/margin_very_small"
+    android:layout_marginEnd="@dimen/margin_very_small"
+    android:layout_marginBottom="@dimen/margin_extra_small"
+    android:background="@drawable/post_background"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_under_small"
+    android:paddingBottom="@dimen/margin_under_small">
+
+    <LinearLayout
+        android:id="@+id/post_owner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_very_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/post_owner_profile_picture"
+            android:layout_width="@dimen/image_extra_extra_small"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:background="@drawable/circle_blue_gray"
+            android:padding="1dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_under_small"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_owner"
+                style="@style/SubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Service de -----"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/post_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05-05-2020"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/actions_on_post"
+            android:layout_width="6dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/three_dots"
+            android:tint="@color/gray" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/media_pager_container"
+        layout="@layout/media_pager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/post_owner_container"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+
+    <LinearLayout
+        android:id="@+id/actionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/media_pager_container"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingEnd="@dimen/margin_small">
+
+        <!--Actions-->
+
+        <ImageView
+            android:id="@+id/zoomOutMedias"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:src="@drawable/zoom_out"
+            android:tint="?appMainReversedColor" />
+
+        <com.techload.madinatic.custom_views.BookMarkView
+            android:id="@+id/bookmarkView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:padding="2dp"
+            android:src="@drawable/star_filled" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Space>
+
+
+        <TextView
+            android:id="@+id/post_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_rounded_gray"
+            android:backgroundTint="@color/blue_gray"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="@dimen/margin_very_small"
+            android:paddingEnd="@dimen/margin_very_small"
+            android:text="@string/id"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/post_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionsContainer"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-smallcaps"
+        android:maxLines="1"
+        android:text="Title"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_title"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/creation_reason"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:id="@+id/see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_description"
+        android:layout_alignStart="@id/post_description"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="@dimen/margin_under_small"
+            android:layout_height="@dimen/margin_under_small"
+            android:src="@drawable/eye_filled"
+            android:tint="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_extra_small"
+            android:text="@string/see_more"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+</RelativeLayout>

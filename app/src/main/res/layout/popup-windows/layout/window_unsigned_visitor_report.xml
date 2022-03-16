@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:background="@drawable/window_background"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small">
+
+
+    <TextView
+        android:id="@+id/profile_picture_title"
+        style="@style/SmallTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:text="@string/report_problem" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_very_small"
+        android:gravity="center_vertical"
+        android:text="@string/unsigned_visitor_phrase"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_very_small"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_marginRight="@dimen/margin_very_small"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/sign_in"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_very_small"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_rounded_transparent_black"
+            android:backgroundTintMode="screen"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:text="@string/sign_in"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="@dimen/image_extra_extra_small"
+                android:layout_height="@dimen/image_extra_small"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/user_login"
+                android:tint="@color/gray" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/see_world_wide_reports"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_very_small"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_rounded_transparent_black"
+            android:backgroundTint="@color/blue_gray"
+            android:backgroundTintMode="screen"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="@color/extra_light_gray"
+                android:maxLines="1"
+                android:text="@string/unsigned_see_world_wide_reports"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="@dimen/image_extra_extra_small"
+                android:layout_height="@dimen/image_extra_small"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/place_filled"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_picture_background">
+
+        <TextView
+            android:id="@+id/sign_up"
+            style="@style/PositiveButtonStyle"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/margin_under_small"
+            android:layout_marginRight="@dimen/margin_under_small"
+            android:layout_weight="1"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/NegativeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

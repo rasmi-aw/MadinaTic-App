@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--colors-->
+    <color name="black">#000</color>
+    <color name="transparent_black">#aa000000</color>
+    <color name="transparent_gray">#99546E7A</color>
+    <color name="transparent_medium_gray">#99bbbbbb</color>
+    <color name="green">#009966</color>
+    <color name="red">#dd0000</color>
+    <color name="blue">#00aacc</color>
+    <color name="gray">#666666</color>
+    <color name="dark_gray">#101010</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="gray_news_feed">#efefef</color>
+    <color name="extra_light_gray">#f9f9f9</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="DarkBlue">#0000ff</color>
+    <color name="pink">#ffa6a6</color>
+    <color name="orange">#eeaa00</color>
+    <color name="mauve">#4A148C</color>
+    <color name="blue_gray">#546E7A</color>
+
+    <!--LightTheme-->
+    <color name="lightTheme_primaryDarkColor">@color/black</color>
+    <color name="lightTheme_primaryColor">@color/dark_gray</color>
+    <color name="lightTheme_accentColor">@color/green</color>
+    <!--DarkTheme-->
+    <color name="darkTheme_primaryDarkColor">@color/black</color>
+    <color name="darkTheme_primaryColor">@color/gray</color>
+    <color name="darkTheme_accentColor">@color/green</color>
+
+</resources>

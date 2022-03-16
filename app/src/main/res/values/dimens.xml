@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margins-->
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_very_small">8dp</dimen>
+    <dimen name="margin_under_small">12dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_very_large">40dp</dimen>
+    <dimen name="margin_extra_large">48dp</dimen>
+    <dimen name="margin_extra_extra_large">64dp</dimen>
+
+    <!--Images-->
+    <dimen name="image_extra_extra_small">30dp</dimen>
+    <dimen name="image_extra_small">40dp</dimen>
+    <dimen name="image_very_small">50dp</dimen>
+    <dimen name="image_small">60dp</dimen>
+    <dimen name="image_medium">90dp</dimen>
+    <dimen name="image_large">120dp</dimen>
+    <dimen name="image_extra_large">150dp</dimen>
+    <dimen name="image_extra_extra_large">250dp</dimen>
+
+    <!--Police-->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="smaller_button_height">40dp</dimen>
+
+    <!--Police-->
+    <dimen name="title">40sp</dimen>
+    <dimen name="small_title">25sp</dimen>
+    <dimen name="sub_title">20sp</dimen>
+    <dimen name="super_text">15sp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_Large">18sp</dimen>
+
+
+</resources>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.reports.SeeReportDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/dark_gray">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <RelativeLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <include
+                    android:id="@+id/media_pager_container"
+                    layout="@layout/media_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/back_navigation"
+                    android:layout_width="@dimen/image_extra_small"
+                    android:layout_height="@dimen/image_extra_small"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margin_small"
+                    android:background="@drawable/circle_transparent_black"
+                    android:padding="@dimen/margin_very_small"
+                    android:src="@drawable/arrow_left_filled"
+                    android:text="1/2"
+                    android:textColor="@color/light_gray"
+                    android:tint="@color/white" />
+
+                <!--Actions-->
+
+                <ImageView
+                    android:id="@+id/show_more_info"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignStart="@id/media_pager_container"
+                    android:layout_alignBottom="@id/media_pager_container"
+                    android:layout_margin="@dimen/margin_small"
+                    android:src="@drawable/help_white_filled" />
+
+
+                <TextView
+                    android:id="@+id/report_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/media_pager_container"
+                    android:layout_alignBottom="@id/media_pager_container"
+                    android:layout_margin="@dimen/margin_small"
+                    android:background="@drawable/rectangle_rounded_gray"
+                    android:backgroundTint="@color/blue_gray"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingStart="@dimen/margin_very_small"
+                    android:paddingEnd="@dimen/margin_very_small"
+                    android:text="@string/id"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingStart="@dimen/margin_under_small"
+        android:paddingEnd="@dimen/margin_under_small"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/report_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:ellipsize="end"
+                android:text="Title"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/report_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/report_rest_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/card_background"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_very_small">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/report_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/state"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/date_sent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/date_sent"
+                        android:textColor="?appMainReversedColor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    android:text="@string/address"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rejection_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    android:layout_weight="1"
+                    android:text="@string/reason_of_rejection"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/report_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/creation_reason" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/rectangle_rounded_stroken"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_under_small">
+
+                <TextView
+                    android:id="@+id/actions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/actions"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/actions_empty_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    android:text="@string/only_see_report"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_under_small"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/edit_report_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_extra_extra_small"
+                            android:layout_height="@dimen/image_extra_extra_small"
+                            android:background="@drawable/circle_green"
+                            android:padding="@dimen/margin_extra_small"
+                            android:src="@drawable/edit" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_extra_small"
+                            android:gravity="center"
+                            android:text="@string/edit"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/complete_report_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_extra_extra_small"
+                            android:layout_height="@dimen/image_extra_extra_small"
+                            android:background="@drawable/circle_orange"
+                            android:padding="@dimen/margin_extra_small"
+                            android:src="@drawable/add_comment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_extra_small"
+                            android:gravity="center"
+                            android:text="@string/complete"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/delete_report_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_extra_extra_small"
+                            android:layout_height="@dimen/image_extra_extra_small"
+                            android:background="@drawable/circle_red"
+                            android:padding="@dimen/margin_extra_small"
+                            android:src="@drawable/delete_white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_extra_small"
+                            android:gravity="center"
+                            android:text="@string/delete"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            s</LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

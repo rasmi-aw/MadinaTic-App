@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!---->
+    <declare-styleable name="ThemeAttributes">
+        <!--        Logo-->
+        <attr name="techloadLogo" format="reference" />
+        <attr name="madinaTicLogoName" format="reference" />
+        <attr name="madinaTicLogo" format="reference" />
+        <!--        Color-->
+        <attr name="appMainColor" format="color" />
+        <attr name="appMainReversedColor" format="color" />
+        <attr name="appSecondColor" format="color" />
+        <attr name="appPopupWindowColor" format="color" />
+        <attr name="tabBackgroundColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="iconColor" format="color" />
+        <attr name="colorLightThemeGRAY_DarkThemeBLACK" format="color" />
+        <attr name="newsFeedBackgroundColor" format="color" />
+        <attr name="validPostBackground" format="color" />
+
+
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Madina-Tic</string>
+
+    <!-- Edit account && Sign_in && Unsigned Visitor screen && sign_up fragments   -->
+
+    <string name="myAccount">My Account</string>
+    <string name="otherInfo">Other information</string>
+    <string name="actions">Actions</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="contact_us">Contact us</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="language_phrase">Change the application language</string>
+    <string name="language">Language</string>
+    <string name="clear_app_data">Clear app data</string>
+    <string name="logout">Logout</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="sign_in">Sign-in</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="password_forgotten">Forgot your password ?</string>
+    <string name="already_registered">Already registered ?&#160;&#160;</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="select_photo">Select or take a new photo please</string>
+
+
+    <!---->
+    <string name="agree_to_our_conditions">I accept terms and conditions ?</string>
+    <string name="app_policy">Our policy</string>
+    <!---->
+
+    <!--hints-->
+    <string name="hint_familyName">Family name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_nationalId">National id</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_pseudo">Pseudo name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Password confirmation</string>
+    <string name="hint_old_password">Old password</string>
+    <string name="hint_name">First name</string>
+    <string name="hint_login_types">Phone - Email - Id - Pseudo</string>
+    <string name="birthday">Date of birth</string>
+
+    <!--General-->
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="send">Send</string>
+    <string name="add">Add</string>
+    <string name="previous_page">Previous</string>
+    <string name="photo">photo</string>
+    <string name="video">Video</string>
+    <string name="ok">ok</string>
+    <string name="connecting_to_server">Connecting to the server...</string>
+    <string name="confirm_your_account">Check your E-mail to confirm your account !</string>
+    <string name="successful_login">Connected successfully !</string>
+    <string name="successful_password_reset">Password changed successfully !</string>
+    <string name="reset_password_email">Check your E-mail to change your password!</string>
+    <string name="posts_update">Update posts</string>
+    <string name="reports_update">Update reports</string>
+    <string name="next_page">Continue</string>
+    <string name="welcome">Welcome  !</string>
+    <string name="from_camera">Camera</string>
+    <string name="from_gallery">From gallery</string>
+    <string name="account_deleted">Account deleted successfully !</string>
+    <string name="profile_picture_updated">Successful Profile picture update !</string>
+    <string name="see_more">See more...</string>
+    <string name="new_posts">You have number new post(s) to read.</string>
+    <string name="new_reports">You have number new report(s) to read.</string>
+    <string name="published_in">in:</string>
+    <string name="text_size_small">Text small</string>
+    <string name="text_size_Medium">Text medium</string>
+    <string name="text_size_Large">Text Large</string>
+    <string name="published_by">Published by:</string>
+    <string name="we_deal_with_problem">Then we will send the best agents to deal with this problem in the fastest period</string>
+    <string name="clean_city">That\'s way we can all live in a beautiful city</string>
+    <string name="see_news">A complete up-to-date Feed will be waiting for you</string>
+    <string name="reporting">Reporting</string>
+    <string name="processing">Processing</string>
+    <string name="results">Results</string>
+    <string name="feedback">Feedback</string>
+
+
+    <!--NewsFeed fragment-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="bookmarked">Post bookmarked</string>
+    <string name="unbookmarked">Post removed from bookmarks</string>
+    <string name="report_problem">Report a problem</string>
+    <string name="unsigned_visitor_phrase">You can not use the report option unless you are signed-in</string>
+    <string name="unsigned_see_world_wide_reports">World wide reports</string>
+    <string name="algeria">Algeria</string>
+    <string name="statistics">Statistics</string>
+    <string name="post">post</string>
+    <string name="user">user</string>
+    <string name="report">report</string>
+
+
+    <!--Citizen my reports fragment see my reports details-->
+    <string name="my_reports">My reports</string>
+    <!---->
+    <string name="state_saved"><![CDATA[<font color="#546e7a">saved</font>]]></string>
+    <string name="state_sent"><![CDATA[<font color="#4A148C">sent</font>]]></string>
+    <string name="state_viewed"><![CDATA[<font color="#4A148C">seen</font>]]></string>
+    <string name="state_being_processed"><![CDATA[<font color="#00aacc">being processed</font>]]></string>
+    <string name="state_processed"><![CDATA[<font color="#009966">processed</font>]]></string>
+    <string name="state_rejected"><![CDATA[<font color="#ff0000">rejected</font>]]></string>
+    <string name="state_incomplete"><![CDATA[<font color="#dd6600">incomplete</font>]]></string>
+    <!---->
+    <string name="search_view_hint">Search by title, id or date</string>
+    <!---->
+    <string name="category">Category</string>
+    <string name="id">id</string>
+    <string name="state">State</string>
+    <string name="reason_of_rejection">Reason</string>
+    <string name="date_sent">Sent in</string>
+    <string name="only_see_report">you can only see the report</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="complete">complete</string>
+    <!--    -->
+    <string name="report_deleted">Report deleted successfully !</string>
+    <string name="report_sent">Report sent successfully !</string>
+    <string name="deleting_report">Deleting report number:</string>
+    <string name="one_photo_at_least">One photo is required at least</string>
+    <string name="your_medias_not_saved_with_report">Your photos/video won\'t be saved with your report unless it\'s sent</string>
+
+
+    <!--About us fragment-->
+    <string name="about_us">About us</string>
+    <string name="about_app_title">About the application</string>
+    <string name="about_company_title">Company</string>
+    <string name="policy_title">Policy</string>
+    <string name="web_site_visit">Visit our website</string>
+    <string name="our_contacts">Stay updated by following us on the links below</string>
+    <string name="citizen">citizen</string>
+    <string name="processed">processed</string>
+
+    <!--Report categories-->
+    <string name="water_problem">Problem of water</string>
+    <string name="lighting_problem">Public lighting problem</string>
+    <string name="road_problem">Road problem</string>
+    <string name="other_problem">Other...</string>
+
+    <!---->
+    <string name="creation_reason">In all places you can find some <![CDATA[<b>problems</b>]]>
+     that can be fixed, and if not fixed, they can make our life so hard like the broken roads,
+    burned out light bulbs etc... and this was the reason that
+    pushed us to create <![CDATA[<b>Madina-Tic</b>]]>&#160;
+        <![CDATA[<small>\"We make the world a best place\"</small>]]>. </string>
+    <!---->
+    <string name="company_description"><![CDATA[<b>Techload</b>]]>
+    is a new founded company, dedicated to produce such a creative software solutions to help people all around the world to live&#160;
+    an easy beautiful life, and solve their daily life problems by the most effective and cheap ways.
+    &#160;<![CDATA[<b><br>working since:</b> june 2020]]>
+    </string>
+    <!---->
+    <string name="read_policy">All rights are reserved for <![CDATA[<b>Techload inc</b>]]>
+    so please before using this product make sure to read all our conditions and policy from the link below.
+    </string>
+    <!---->
+    <string name="follow_guidlines">Stay safe during this crisis, follow your local guidelines and protect your family</string>
+    <!---->
+
+    <!--Errors-->
+    <string name="error_is_empty">empty field</string>
+    <string name="error_confirmation_password_different">not the same password</string>
+    <string name="error_too_short">too short</string>
+    <string name="error_new_password_equal_to_old">New password can not be equal to old password</string>
+
+
+</resources>

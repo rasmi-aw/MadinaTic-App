@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Madina-Tic</string>
+
+    <!-- Edit account && Sign_in && Unsigned Visitor screen && sign_up fragments   -->
+
+    <string name="myAccount">حسابي</string>
+    <string name="otherInfo">معلومات اضافية</string>
+    <string name="actions">قم ب</string>
+    <string name="dark_mode">الانتقال الى الوضع المظلم</string>
+    <string name="contact_us">مراسلتنا</string>
+    <string name="delete_my_account">حذف الحساب</string>
+    <string name="language_phrase">تغيير لغة التطبيق</string>
+    <string name="language">اللغة</string>
+    <string name="clear_app_data">حذف بيانات التطبيق</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="profile_picture">صورة الحساب</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="password_forgotten">نسيت كلمة المرور ؟</string>
+    <string name="already_registered">&#160;&#160;هل لديك حساب ؟</string>
+
+    <!---->
+    <string name="agree_to_our_conditions">أوافق على شروط الاستخدام ؟</string>
+    <string name="app_policy">شروط الاستخدام</string>
+    <!---->
+
+    <!--hints-->
+    <string name="hint_familyName">اللقب</string>
+    <string name="hint_name">الاسم</string>
+    <string name="hint_phone">الهاتف</string>
+    <string name="hint_nationalId">رقم بطاقة التعريف</string>
+    <string name="hint_email">البريد الاكتروني</string>
+    <string name="hint_pseudo">اسم الحساب</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="hint_old_password">كلمة المرور السابقة</string>
+    <string name="hint_login_types">الهاتف - البريد - رقم التعريف - اسم الحساب</string>
+    <string name="birthday">تاريخ الميلاد</string>
+
+    <!--General-->
+    <string name="save">حفظ</string>
+    <string name="cancel">اهمال</string>
+    <string name="send">ارسال</string>
+    <string name="add">اضافة</string>
+    <string name="previous_page">الرجوع</string>
+    <string name="photo">صورة</string>
+    <string name="video">فيديو</string>
+    <string name="ok">مفهوم</string>
+    <string name="connecting_to_server">الاتصال بالخادم...</string>
+    <string name="confirm_your_account">اطلع على بريدك لتفعيل الحساب !</string>
+    <string name="successful_login">ولوج موفق !</string>
+    <string name="successful_password_reset">غيرت كلمة المرور بنجاح!</string>
+    <string name="reset_password_email">اطلع على بريدك لتغيير كلمة السر!</string>
+    <string name="posts_update">تحديث المنشورات</string>
+    <string name="reports_update">تحديث البلاغات</string>
+    <string name="next_page">واصل</string>
+    <string name="welcome">أهلا !</string>
+    <string name="from_camera">الكميرا</string>
+    <string name="from_gallery">اختر من الموجود</string>
+    <string name="account_deleted">ابطلت حسابك بنجاح</string>
+    <string name="see_more">المزيد</string>
+    <string name="profile_picture_updated">تم تغيير الصورة بنجاح!</string>
+    <string name="new_posts">لديك number منشور جديدة يمكنك الأطلاع عليها.</string>
+    <string name="new_reports">لديك number بلاغ جديد يمكنك الأطلاع عليهم</string>
+    <string name="published_in">في:</string>
+    <string name="text_size_small">نص صغير</string>
+    <string name="text_size_Medium">نص متوسط</string>
+    <string name="text_size_Large">نص كبير</string>
+    <string name="published_by">نشره:</string>
+    <string name="we_deal_with_problem">و سوف نرسل افضل العمال لحل اي مشكل في افضل الاجال</string>
+    <string name="clean_city">بتلك الطريقة يمكننا العيش في أجمل المدن</string>
+    <string name="see_news">يمكنك الاطلاع على اخر المستجدات</string>
+    <string name="reporting">ابلاغ</string>
+    <string name="processing">معالجة</string>
+    <string name="results">النتيجة</string>
+    <string name="feedback">المستجدات</string>
+
+
+    <!--NewsFeed fragment-->
+    <string name="title">العنوان</string>
+    <string name="description">الوصف</string>
+    <string name="address">العنوان</string>
+    <string name="bookmarked">اضفت المقال الى القائمة المفضلة</string>
+    <string name="unbookmarked">Post removed from bookmarks</string>
+    <string name="report_problem">ابلغ عن مشكل</string>
+    <string name="unsigned_visitor_phrase">لا يمكنك الابلاغ عن مشكل ان لم تكن مسجلا في التطبيق</string>
+    <string name="unsigned_see_world_wide_reports">الاطلاع على الابلاغات</string>
+    <string name="no_internet">غير متصل بالانترنت</string>
+    <string name="select_photo">اختر صورة من فضلك</string>
+
+
+    <string name="algeria">الجزائر</string>
+    <string name="statistics">الاحصائيات</string>
+    <string name="post">منشور</string>
+    <string name="user">عضو</string>
+    <string name="report">بلاغ</string>
+
+    <!--Citizen my reports fragment-->
+    <string name="my_reports">التقارير</string>
+    <string name="state_saved"><![CDATA[<font color="#bbbbbb">محفوظ</font>]]></string>
+    <string name="state_sent"><![CDATA[<font color="#4A148C">أرسل</font>]]></string>
+    <string name="state_viewed"><![CDATA[<font color="#4A148C">تمت رؤيته</font>]]></string>
+    <string name="state_being_processed"><![CDATA[<font color="#00aacc">تتم معالجته</font>]]></string>
+    <string name="state_processed"><![CDATA[<font color="#009966">مكتمل</font>]]></string>
+    <string name="state_rejected"><![CDATA[<font color="#ff0000">مرفوض</font>]]></string>
+    <string name="state_incomplete"><![CDATA[<font color="#dd6600">ناقص</font>]]></string>
+    <!---->
+    <string name="search_view_hint">ابحث بالعنوان، الرقم أو التاريخ</string>
+    <!--    -->
+    <string name="category">الصنف</string>
+    <string name="id">الرقم</string>
+    <string name="state">الحالة</string>
+    <string name="reason_of_rejection">سبب الرفض</string>
+    <string name="date_sent">تاريخ الارسال</string>
+    <string name="only_see_report">يمكنك فقط الاطلاع على البلاغ</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تحديث</string>
+    <string name="complete">اضافة</string>
+    <!--    -->
+    <string name="report_deleted">حذف البلاغ بنجاح !</string>
+    <string name="report_sent">ابلغت عن المشكل بنجاح !</string>
+    <string name="deleting_report">يجري حذف البلاغ رقم:</string>
+    <string name="one_photo_at_least">عليك ارفاق صورة واحدة على الأقل.</string>
+    <string name="your_medias_not_saved_with_report">لن تحفظ الصور او الفيديو الا في حالة ارسال البلاغ</string>
+
+    <!--About us fragment-->
+    <string name="about_us">في ما يخصنا</string>
+    <string name="about_app_title">التعريف بالتطبيق</string>
+    <string name="about_company_title">الشركة</string>
+    <string name="policy_title">شروط الاستخدام</string>
+    <string name="web_site_visit">زيارة موقعنا</string>
+    <string name="our_contacts">قم بمتابعتنا ليصلك كل جديد</string>
+    <string name="citizen">مقيم</string>
+    <string name="processed">تم</string>
+
+    <!--Report categories-->
+    <string name="water_problem">مشكل في المياه</string>
+    <string name="lighting_problem">الاضاءة العامة</string>
+    <string name="road_problem">مشكل في الطريق العام</string>
+    <string name="other_problem">مشكل اخر...</string>
+
+    <!---->
+    <string name="creation_reason">حيثما كنت سوف تواجه العديد من
+        <![CDATA[<b>المشاكل </b>]]>
+         التي يمكن حلها مثل الطرق المشوهة و مصابيح الشارع المكسورة و هذا ما دفعنا الى انشاء
+    <![CDATA[<b>Madina-Tic</b>]]>&#160;
+    .<![CDATA[<small>\"معا نجعل العالم مكانا أفضل\"</small>]]>&#160;</string>
+    <!---->
+    <string name="company_description"> شركة <![CDATA[<b>Techload</b>]]>
+    جديدة النشأة متخصصة في ايجاد الحلول الرقمية الابداعية لمختلف فءات الناس و توفير حياة رغدة
+     و تكمن روعة هذه الحلول في بساطتها و كونها الأرخص ثمنا على الاطلاق
+    <![CDATA[<br><b> في طور العمل منذ:</b> جوان 2020 ]]>
+    </string>
+    <!---->
+    <string name="read_policy">كل الحقوق محفوظة ل <![CDATA[<b>Techload inc</b>]]>
+   ننصحكم بقراءة شروط و قواعد الاستخدام لمعرفة المزيد عن التطبيق
+    </string>
+    <!---->
+    <string name="follow_guidlines">حافظوا على سلامتكم،  احترم طرق الوقاية المنصوص عليها في ولايتك و احمي عائلتك</string>
+    <!---->
+
+    <!--Errors-->
+    <string name="error_is_empty">المحتوى فارغ</string>
+    <string name="error_confirmation_password_different">كلمة السر غير متطابقة</string>
+    <string name="error_too_short">قصير جدا</string>
+    <string name="error_new_password_equal_to_old">الرقم السري الجديد غير مختلف عن الحالي</string>
+
+</resources>

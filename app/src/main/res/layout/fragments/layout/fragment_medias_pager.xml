@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MediasPagerFragment">
+
+    <include
+        android:id="@+id/media_pager_container"
+        layout="@layout/media_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/back_navigation"
+        android:layout_width="@dimen/image_extra_small"
+        android:layout_height="@dimen/image_extra_small"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:background="@drawable/circle_transparent_black"
+        android:padding="@dimen/margin_very_small"
+        android:src="@drawable/arrow_left_filled"
+        android:text="1/2"
+        android:textColor="@color/light_gray"
+        android:tint="@color/white" />
+
+</RelativeLayout>

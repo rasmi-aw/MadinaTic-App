@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <Space
+        android:id="@+id/space_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/edit_report_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:layout_marginEnd="@dimen/margin_under_small"
+        android:layout_marginRight="@dimen/margin_under_small"
+        android:layout_marginBottom="@dimen/margin_under_small"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/image_extra_extra_small"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:background="@drawable/circle_green"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/edit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="@string/edit"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/complete_report_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/image_extra_extra_small"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:background="@drawable/circle_orange"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/add_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="@string/complete"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/delete_report_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_under_small"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/image_extra_extra_small"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:background="@drawable/circle_red"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/delete_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="@string/delete"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actions_empty_indicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/only_see_report"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/view_report"
+        android:layout_width="@dimen/image_extra_extra_small"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_rounded_right_blue"
+        android:padding="@dimen/margin_extra_small"
+        android:src="@drawable/eye_filled" />
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.About_us">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_under_small"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_under_small"
+        android:paddingBottom="@dimen/margin_small">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/card_background"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/algerian_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/algeria_flag_small"
+                android:drawablePadding="@dimen/margin_very_small"
+                android:gravity="center_vertical"
+                android:text="@string/algeria"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/statistics"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/statistics" />
+
+            <TextView
+                android:id="@+id/statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statistics"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/last_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 mars 2020"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/statistics"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/statistics" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/statistics">
+
+                <!--Posts info    -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/image_extra_extra_small"
+                        android:layout_height="@dimen/image_extra_extra_small"
+                        android:src="@drawable/paper"
+                        android:tint="@color/green" />
+
+                    <TextView
+                        android:id="@+id/posts_stats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="525 post" />
+
+                </LinearLayout>
+
+                <!--Users info    -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/image_extra_extra_small"
+                        android:layout_height="@dimen/image_extra_extra_small"
+                        android:src="@drawable/person_filled"
+                        android:tint="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/users_stats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1500 user" />
+
+                </LinearLayout>
+
+                <!--Reports info    -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/image_extra_extra_small"
+                        android:layout_height="@dimen/image_extra_extra_small"
+                        android:src="@drawable/alert"
+                        android:tint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/reports_stats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="200 report" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--About the app section-->
+        <LinearLayout
+            android:id="@+id/about_the_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/card_background"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/about_the_app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallTitleStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/about_app_title" />
+
+                <ImageView
+                    android:id="@+id/madinatic_logo"
+                    android:layout_width="@dimen/image_very_small"
+                    android:layout_height="@dimen/image_very_small"
+                    android:src="?attr/madinaTicLogo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about_the_app_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creation_reason" />
+
+            <TextView
+                android:id="@+id/web_site_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/web_site_visit"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+        <!--Company section-->
+        <LinearLayout
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_under_small"
+            android:background="@drawable/card_background"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/company_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallTitleStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/about_company_title" />
+
+                <ImageView
+                    android:id="@+id/company_logo"
+                    android:layout_width="@dimen/image_very_small"
+                    android:layout_height="@dimen/image_very_small"
+                    android:src="?attr/techloadLogo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/company_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_description" />
+        </LinearLayout>
+
+        <!--About the app section-->
+        <LinearLayout
+            android:id="@+id/policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_under_small"
+            android:background="@drawable/card_background"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SmallTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:text="@string/policy_title" />
+
+            <TextView
+                android:id="@+id/policy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_very_small"
+                android:text="@string/read_policy" />
+
+            <TextView
+                android:id="@+id/policy_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/policy_title"
+                android:textColor="@color/DarkBlue" />
+        </LinearLayout>
+
+        <!--About the app section-->
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_under_small"
+            android:background="@drawable/rectangle_rounded_stroken"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                style="@style/SubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:text="@string/contact_us" />
+
+            <TextView
+                android:id="@+id/contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_very_small"
+                android:text="@string/our_contacts" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/facebook_page"
+                    android:layout_width="@dimen/image_extra_extra_small"
+                    android:layout_height="@dimen/image_extra_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:src="@drawable/facebook_ic" />
+
+                <ImageView
+                    android:id="@+id/youtube_page"
+                    android:layout_width="@dimen/image_extra_extra_small"
+                    android:layout_height="@dimen/image_extra_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:src="@drawable/youtube_ic" />
+
+                <ImageView
+                    android:id="@+id/twitter_page"
+                    android:layout_width="@dimen/image_extra_extra_small"
+                    android:layout_height="@dimen/image_extra_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:src="@drawable/twitter_ic" />
+
+                <ImageView
+                    android:id="@+id/gmail_page"
+                    android:layout_width="@dimen/image_extra_extra_small"
+                    android:layout_height="@dimen/image_extra_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:src="@drawable/gmail_ic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

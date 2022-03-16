@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_under_small">
+
+
+    <ImageView
+        android:id="@+id/report_rep_pic"
+        android:layout_width="@dimen/image_small"
+        android:layout_height="@dimen/image_small"
+        android:background="@drawable/circle_blue_gray"
+        android:padding="2dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_title"
+            style="@style/SubTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title" />
+
+
+        <TextView
+            android:id="@+id/report_description"
+            style="@style/SubTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingLeft="@dimen/margin_extra_small"
+            android:text="Description"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/report_state"
+        style="@style/SubTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="State"
+        android:textColor="@color/blue"
+        android:textDirection="locale"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+

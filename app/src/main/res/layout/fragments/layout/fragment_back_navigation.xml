@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorLightThemeGRAY_DarkThemeBLACK"
+    tools:context=".fragments.helpers.BackNavigationFragment">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_navigation"
+                android:layout_width="@dimen/image_very_small"
+                android:layout_height="@dimen/image_very_small"
+                android:background="@drawable/previous_button_background"
+                android:elevation="2dp"
+                android:padding="@dimen/margin_very_small"
+                android:tint="?appMainReversedColor"
+                android:src="@drawable/arrow_left_filled" />
+
+            <TextView
+                android:id="@+id/page_name"
+                style="@style/SmallTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/margin_small"
+                android:text="@string/about_us" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/page_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginRight="@dimen/margin_large"
+    android:background="@drawable/window_background"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profile_picture_title"
+            style="@style/SmallTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:text="@string/language" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/language_phrase" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/languages_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_extra_large"
+        tools:listitem="@layout/languages_list_item" />
+
+    <TextView
+        android:id="@+id/cancel"
+        style="@style/BigNegativeButton"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/cancel" />
+
+
+</LinearLayout>

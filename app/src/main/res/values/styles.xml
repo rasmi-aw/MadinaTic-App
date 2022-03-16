@@ -1,0 +1,188 @@
+<resources>
+    <!-- App themes -->
+
+    <!-- Light application theme. -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/lightTheme_primaryColor</item>
+        <item name="colorPrimaryDark">@color/lightTheme_primaryDarkColor</item>
+        <item name="colorAccent">@color/lightTheme_accentColor</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+
+        <!--        drawable-->
+        <item name="techloadLogo">@drawable/techload_logo</item>
+        <item name="madinaTicLogo">@drawable/madinatic_logo_black</item>
+        <item name="madinaTicLogoName">@drawable/madinatic_logo_name_black</item>
+        <!--        colors-->
+        <item name="appMainColor">@color/white</item>
+        <item name="appMainReversedColor">@color/black</item>
+        <item name="appSecondColor">@color/extra_light_gray</item>
+        <item name="appPopupWindowColor">@color/white</item>
+        <item name="tabBackgroundColor">@color/black</item>
+        <item name="borderColor">@color/gray</item>
+        <item name="iconColor">@color/gray</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="colorLightThemeGRAY_DarkThemeBLACK">@color/extra_light_gray</item>
+        <item name="newsFeedBackgroundColor">@color/gray_news_feed</item>
+        <item name="validPostBackground">#efefef</item>
+
+    </style>
+
+    <!-- Dark application theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/darkTheme_primaryColor</item>
+        <item name="colorPrimaryDark">@color/darkTheme_primaryDarkColor</item>
+        <item name="colorAccent">@color/darkTheme_accentColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <!--        drawable-->
+        <item name="techloadLogo">@drawable/techload_logo_white</item>
+        <item name="madinaTicLogo">@drawable/madinatic_logo_white</item>
+        <item name="madinaTicLogoName">@drawable/madinatic_logo_name_white</item>
+        <!--        colors-->
+        <item name="appMainColor">@color/black</item>
+        <item name="appMainReversedColor">@color/white</item>
+        <item name="appSecondColor">@color/dark_gray</item>
+        <item name="appPopupWindowColor">@color/dark_gray</item>
+        <item name="tabBackgroundColor">@color/gray</item>
+        <item name="borderColor">@color/gray</item>
+        <item name="iconColor">@color/light_gray</item>
+        <item name="cardBackgroundColor">@color/dark_gray</item>
+        <item name="colorLightThemeGRAY_DarkThemeBLACK">@color/black</item>
+        <item name="newsFeedBackgroundColor">@color/black</item>
+        <item name="validPostBackground">@color/dark_gray</item>
+    </style>
+
+
+    <!---->
+    <style name="TitleStyle">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:layout_marginBottom">@dimen/image_very_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+    </style>
+
+    <!--Small title-->
+    <style name="SmallTitleStyle" parent="TitleStyle">
+        <item name="android:textSize">@dimen/small_title</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+    </style>
+
+    <!--SubTitle-->
+    <style name="SubTitleStyle" parent="TitleStyle">
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textSize">@dimen/sub_title</item>
+    </style>
+
+    <style name="DarkSubTitleStyle" parent="TitleStyle">
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textSize">@dimen/sub_title</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+    <!--EditTexts styles-->
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="passwordToggleTint">?iconColor</item>
+        <item name="errorTextAppearance">@style/error_appearance</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">?appMainReversedColor</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <!--Actions styles-->
+
+    <!--Actions containers styles-->
+    <style name="ActionsStyles">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+    </style>
+
+    <!--Actions Texts styles-->
+    <style name="ActionsTextStyle">
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+    </style>
+
+    <!--Buttons Styles-->
+    <style name="PositiveButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">@dimen/image_extra_extra_small</item>
+        <item name="android:background">@drawable/rectangle_rounded_green</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BigPositiveButtonStyle" parent="PositiveButtonStyle">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:textSize">@dimen/super_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+    </style>
+
+
+    <style name="NegativeButtonStyle">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">0dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/negative_button_background</item>
+        <item name="android:layout_height">@dimen/image_extra_extra_small</item>
+
+    </style>
+
+    <style name="BigNegativeButton" parent="NegativeButtonStyle">
+        <item name="android:layout_height">@dimen/image_extra_small</item>
+
+    </style>
+
+
+    <!--checkBox -->
+    <style name="CheckBoxStyle">
+        <item name="android:layout_marginTop">@dimen/margin_very_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?appMainReversedColor</item>
+    </style>
+
+    <!--Red checkBox -->
+    <style name="SmthWrongTextStyle" parent="CheckBoxStyle">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!--popup menu style-->
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:itemBackground">?appSecondColor</item>
+        <item name="android:textColor">?appMainReversedColor</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_small"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingEnd="@dimen/margin_small"
+    tools:context=".fragments.reports.ReportProblemScreen">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/report_title_container"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:hint="@string/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/report_title_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="?appMainReversedColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <FrameLayout
+        android:id="@+id/problems_categories_dropdown_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:background="@drawable/card_background"
+        android:elevation="3dp"
+        android:padding="0dp"
+        android:paddingStart="@dimen/margin_very_small"
+        android:paddingEnd="@dimen/margin_very_small">
+
+        <Spinner
+            android:id="@+id/report_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:popupBackground="?appSecondColor" />
+
+    </FrameLayout>
+
+    <!--Report description-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/report_description_container"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_extra_large"
+        android:layout_below="@id/problems_categories_dropdown_container"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:layout_marginRight="0dp"
+        android:hint="@string/description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/report_description_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:textColor="?appMainReversedColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Address-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/report_address_container"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:hint="@string/address">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/report_address_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingStart="@dimen/margin_under_small"
+            android:scrollbarThumbVertical="@color/red"
+            android:textColor="?appMainReversedColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Add Medias-->
+    <RelativeLayout
+        android:id="@+id/medias_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/horizontal_media"
+            layout="@layout/media_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_extra_large"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+        <ImageView
+            android:id="@+id/remove_media"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/horizontal_media"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/circle_transparent_black"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/delete_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_medias_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/card_background"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_under_small">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/card_background"
+            android:padding="0dp"
+            android:text="@string/add"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_photo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/camera_filled"
+            android:tint="?appMainReversedColor" />
+
+        <ImageView
+            android:id="@+id/add_video"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_extra_extra_small"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_extra_small"
+            android:src="@drawable/play_white_circled"
+            android:tint="?appMainReversedColor" />
+
+        <ImageView
+            android:id="@+id/zoomOutMedias"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/zoom_out"
+            android:tint="@color/gray" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/send_report"
+            style="@style/PositiveButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/send" />
+
+        <TextView
+            android:id="@+id/save"
+            style="@style/NegativeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_under_small"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</LinearLayout>

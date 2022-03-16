@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/window_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_under_small">
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarTextColor="@color/gray" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="@dimen/margin_medium"
+        android:layout_height="@dimen/margin_medium"
+        android:background="@drawable/circle_red"
+        android:padding="@dimen/margin_extra_small"
+        android:src="@drawable/arrow_left_filled"
+        android:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/save"
+        style="@style/BigNegativeButton"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_under_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_very_small"
+        android:text="@string/save" />
+
+</LinearLayout>

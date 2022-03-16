@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_medium"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.WelcomeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/flowers"
+            android:layout_width="@dimen/image_extra_large"
+            android:layout_height="@dimen/image_extra_large"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc_user" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flowers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:padding="0dp"
+            android:text="@string/reporting"
+            android:textColor="?appMainReversedColor"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/after_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="@string/report_problem"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="@dimen/image_extra_large"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/after_welcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/searchview_background"
+            android:backgroundTint="@color/green"
+            android:gravity="center"
+            android:padding="@dimen/margin_very_small"
+            android:text="@string/next_page"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="1/4"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
