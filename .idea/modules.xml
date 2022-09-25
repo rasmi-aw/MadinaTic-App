@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MadinaTic.iml" filepath="$PROJECT_DIR$/MadinaTic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MadinaTic.app.unitTest.iml" />
     </modules>
   </component>
 </project>
